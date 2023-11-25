@@ -14,10 +14,13 @@ struct ContentView: View {
             VStack {
                 
                 Text("This is where the qoute will go")
-                    .font(.system(size: 30))
+                    .font(.system(size: 30, weight: .bold))
+                    .foregroundColor(.fontBrown)
                     .padding()
+                    
                 Text("Author")
-                    .font(.system(size: 18))
+                    .font(.system(size: 18, weight: .bold))
+                    .foregroundColor(.fontDarkBrown)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding()
