@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
+            
             VStack {
                 
                 Text("This is where the qoute will go")
@@ -18,10 +19,13 @@ struct ContentView: View {
                 Text("Author")
                     .font(.system(size: 18))
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding()
+        
+            .background(.lightBackground)
             
         }
-        .background(.lightBackground)
+        
     }
 }
 
