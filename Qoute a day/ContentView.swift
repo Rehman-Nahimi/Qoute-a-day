@@ -27,6 +27,8 @@ struct ContentView: View {
                 Spacer()
                     .frame(height: 100)
                 Image(systemName: "arrow.counterclockwise")
+                    .font(.system(size: 30, weight: .bold))
+                    .foregroundColor(.fontDarkBrown)
                 
                 Spacer()
                     .frame(height: 25)
