@@ -12,6 +12,8 @@ struct ContentView: View {
         NavigationView{
             
             VStack {
+                Spacer()
+                    .frame(height: 75)
                 
                 Text("This is where the qoute will go")
                     .font(.system(size: 30, weight: .bold))
@@ -21,6 +23,15 @@ struct ContentView: View {
                 Text("Author")
                     .font(.system(size: 18, weight: .bold))
                     .foregroundColor(.fontDarkBrown)
+                
+                Spacer()
+                    .frame(height: 100)
+                Image(systemName: "arrow.counterclockwise")
+                
+                Spacer()
+                    .frame(height: 25)
+                
+                
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding()
