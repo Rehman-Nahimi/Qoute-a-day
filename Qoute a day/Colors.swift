@@ -16,6 +16,6 @@ extension ShapeStyle where Self == Color {
         Color(red:0.824, green: 0.706 , blue: 0.549)
     }
     static var fontDarkBrown: Color {
-        Color(red:0.588, green: 0.294, blue: 0.0)
+        Color(red:0.212, green: 0.149, blue: 0.141)
     }
 }
