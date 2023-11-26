@@ -16,6 +16,7 @@ struct ContentView: View {
                     .frame(height: 75)
                 
                 Text("This is where the qoute will go")
+                    .multilineTextAlignment(.center)
                     .font(.system(size: 30, weight: .bold))
                     .foregroundColor(.fontBrown)
                     .padding()

@@ -17,7 +17,7 @@ struct Logo: Shape {
         
         path.move(to: startPoint)
         
-        path.addLine(to: CGPoint(x: width * 0.63, y: 0.6)
+        path.addLine(to: CGPoint(x: width * 0.63, y: height * 0.6)
         )
         
         path.addQuadCurve(
@@ -28,6 +28,14 @@ struct Logo: Shape {
             to: CGPoint(x: width * 0.28, y: height * 0.62),
             control: CGPoint(x: width * 0.3, y: height * 0.7)
         )
+        path.addLine(to: CGPoint(x: width * 0.28, y: height * 0.3))
+        
+        path.addQuadCurve(
+            to: CGPoint(x: width * 0.76, y: height * 0.3),
+            control: CGPoint(x: width * 0.5, y: height * 0.1)
+        )
+        
+        path.addLine(to: CGPoint(x: width * 0.76, y: height * 0.65))
         
         
         
