@@ -16,10 +16,19 @@ struct Logo: Shape {
         let startPoint = CGPoint(x: rect.maxX, y: height * 0.93)
         
         path.move(to: startPoint)
-        path.addLine(to: CGPoint(x: width * 0.47, y: 0.6))
+        
+        path.addLine(to: CGPoint(x: width * 0.63, y: 0.6)
+        )
+        
         path.addQuadCurve(
-            to: CGPoint(x: width * 0.65, y: height * 0.75),
-            control: CGPoint(x: width * 0.6, y: height * 0.6))
+            to: CGPoint(x: width * 0.35, y: height * 0.75),
+            control: CGPoint(x: width * 0.4, y: height * 0.6)
+        )
+        path.addQuadCurve(
+            to: CGPoint(x: width * 0.28, y: height * 0.62),
+            control: CGPoint(x: width * 0.3, y: height * 0.7)
+        )
+        
         
         
         return path
