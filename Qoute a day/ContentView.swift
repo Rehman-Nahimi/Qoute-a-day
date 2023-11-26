@@ -26,9 +26,13 @@ struct ContentView: View {
                 
                 Spacer()
                     .frame(height: 100)
-                Image(systemName: "arrow.counterclockwise")
-                    .font(.system(size: 30, weight: .bold))
-                    .foregroundColor(.fontDarkBrown)
+                Button{
+                    refresh()
+                } label: {
+                    Image(systemName: "arrow.counterclockwise")
+                        .font(.system(size: 30, weight: .bold))
+                        .foregroundColor(.fontDarkBrown)
+                }
                 
                 Spacer()
                     .frame(height: 25)
@@ -41,6 +45,9 @@ struct ContentView: View {
             .background(.lightBackground)
             
         }
+        
+    }
+    func refresh() {
         
     }
 }

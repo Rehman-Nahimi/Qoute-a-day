@@ -12,6 +12,7 @@
 		E084DC682B122F1000599461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E084DC672B122F1000599461 /* Assets.xcassets */; };
 		E084DC6B2B122F1000599461 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E084DC6A2B122F1000599461 /* Preview Assets.xcassets */; };
 		E084DC722B1231F000599461 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084DC712B1231F000599461 /* Colors.swift */; };
+		E084DC742B139A8600599461 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084DC732B139A8600599461 /* Logo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E084DC672B122F1000599461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E084DC6A2B122F1000599461 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E084DC712B1231F000599461 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E084DC732B139A8600599461 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				E084DC632B122F0E00599461 /* Qoute_a_dayApp.swift */,
 				E084DC652B122F0E00599461 /* ContentView.swift */,
+				E084DC732B139A8600599461 /* Logo.swift */,
 				E084DC712B1231F000599461 /* Colors.swift */,
 				E084DC672B122F1000599461 /* Assets.xcassets */,
 				E084DC692B122F1000599461 /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				E084DC662B122F0E00599461 /* ContentView.swift in Sources */,
 				E084DC722B1231F000599461 /* Colors.swift in Sources */,
+				E084DC742B139A8600599461 /* Logo.swift in Sources */,
 				E084DC642B122F0E00599461 /* Qoute_a_dayApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
