@@ -37,6 +37,16 @@ struct Logo: Shape {
         
         path.addLine(to: CGPoint(x: width * 0.76, y: height * 0.65))
         
+        path.addLine(to: CGPoint(x: width * 0.84, y: height * 0.73))
+        
+        path.addLine(to: CGPoint(x: width * 0.87, y: height * 0.3))
+        
+        path.addQuadCurve(
+            to: CGPoint(x: width * 0.2, y: height * 0.3),
+            control: CGPoint(x: width * 0.5, y: rect.minY)
+        )
+        
+        
         
         
         return path
