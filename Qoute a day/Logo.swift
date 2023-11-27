@@ -46,8 +46,25 @@ struct Logo: Shape {
             control: CGPoint(x: width * 0.5, y: rect.minY)
         )
         
+        path.addLine(to: CGPoint(x: width * 0.2, y: height * 0.7))
         
+        path.addQuadCurve(
+            to: CGPoint(x: width * 0.7, y: height * 0.9),
+            control: CGPoint(x: width * 0.4, y: height * 0.9)
+        )
         
+        path.addLine(to: CGPoint(x: width * 0.65, y: height * 0.8))
+        
+        path.addQuadCurve(
+            to: CGPoint(x: width * 0.6, y: height * 0.7),
+            control: CGPoint(x: width * 0.45, y: height * 0.8)
+        )
+        path.addLine(to: CGPoint(x: width * 0.8, y: height * 0.9))
+        
+        path.addQuadCurve(
+            to: startPoint,
+            control: CGPoint(x: width * 0.87, y: height * 0.93)
+        )
         
         return path
     }
@@ -55,6 +72,9 @@ struct Logo: Shape {
 
 struct Logo_Previews: PreviewProvider {
     static var previews: some View {
-        Logo()
+        ZStack{
+            Logo()
+        }
+        
     }
 }
