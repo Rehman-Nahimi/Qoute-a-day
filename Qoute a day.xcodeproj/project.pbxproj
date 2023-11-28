@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E07DB88D2B16718B00CC7402 /* Second logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07DB88C2B16718B00CC7402 /* Second logo.swift */; };
 		E084DC642B122F0E00599461 /* Qoute_a_dayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084DC632B122F0E00599461 /* Qoute_a_dayApp.swift */; };
 		E084DC662B122F0E00599461 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084DC652B122F0E00599461 /* ContentView.swift */; };
 		E084DC682B122F1000599461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E084DC672B122F1000599461 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E07DB88C2B16718B00CC7402 /* Second logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Second logo.swift"; sourceTree = "<group>"; };
 		E084DC602B122F0E00599461 /* Qoute a day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Qoute a day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E084DC632B122F0E00599461 /* Qoute_a_dayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qoute_a_dayApp.swift; sourceTree = "<group>"; };
 		E084DC652B122F0E00599461 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				E084DC632B122F0E00599461 /* Qoute_a_dayApp.swift */,
 				E084DC652B122F0E00599461 /* ContentView.swift */,
+				E07DB88C2B16718B00CC7402 /* Second logo.swift */,
 				E084DC732B139A8600599461 /* Logo.swift */,
 				E084DC712B1231F000599461 /* Colors.swift */,
 				E084DC672B122F1000599461 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07DB88D2B16718B00CC7402 /* Second logo.swift in Sources */,
 				E084DC662B122F0E00599461 /* ContentView.swift in Sources */,
 				E084DC722B1231F000599461 /* Colors.swift in Sources */,
 				E084DC742B139A8600599461 /* Logo.swift in Sources */,
