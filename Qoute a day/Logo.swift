@@ -73,8 +73,23 @@ struct Logo: Shape {
 struct Logo_Previews: PreviewProvider {
     static var previews: some View {
         ZStack{
+            Circle()
+                .fill(
+                    LinearGradient(
+                        colors:[
+                            (.lightBackground),
+                            (.fontBrown)
+                                ],
+                        startPoint: .bottomTrailing,
+                        endPoint: .topLeading
+                        )
+                    )
             Logo()
+                .fill(.fontDarkBrown)
+                
         }
+        .padding(50)
+        .aspectRatio(1,contentMode: .fit)
         
     }
 }
