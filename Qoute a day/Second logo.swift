@@ -67,6 +67,7 @@ struct SwiftLogo: Shape {
     }
 }
 
+
 struct SwiftLogo_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {

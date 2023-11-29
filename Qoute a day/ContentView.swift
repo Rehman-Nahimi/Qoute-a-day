@@ -12,8 +12,27 @@ struct ContentView: View {
         NavigationView{
             
             VStack {
+                ZStack{
+                    RoundedRectangle(cornerRadius: 100)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    .lightBackground,
+                                    .fontBrown
+                                ],
+                                startPoint: .bottomTrailing,
+                                endPoint: .topLeading
+                            )
+                        )
+                    SwiftLogo()
+                        .fill(.white)
+                        .padding(17)
+                        
+                }
+                .frame(width: 100, height: 100)
+                
                 Spacer()
-                    .frame(height: 75)
+                    .frame(height: 175)
                 
                 Text("This is where the qoute will go")
                     .multilineTextAlignment(.center)
@@ -36,7 +55,7 @@ struct ContentView: View {
                 }
                 
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 175)
                 
                 
             }
@@ -45,7 +64,9 @@ struct ContentView: View {
         
             .background(.lightBackground)
             
+            
         }
+        
         
     }
     func refresh() {
