@@ -6,3 +6,48 @@
 //
 
 import Foundation
+
+
+class ApiCall{
+    
+    func fetchQuotes(completion:@escaping([Quote]) -> ()){
+        guard let url = URL(string: "https://quote-a-day-efb42-default-rtdb.europe-west1.firebasedatabase.app/") else {return}
+        URLSession.shared.dataTask(with: url) {(data, _, _) in
+            let quotes = try! JSONDecoder().decode([Quote].self, from: data!)
+            
+            DispatchQueue.main.async {
+                completion(quotes)
+            }
+        }
+        .resume()
+    }
+}
+
+class ApiService {
+    func getQuotes() async throws -> [Quote]{
+        let endpoint = "https://quote-a-day-efb42-default-rtdb.europe-west1.firebasedatabase.app/"
+        
+        guard let url  = URL(string: endpoint) else { throw TSError.invalidURL}
+        
+        let(data, response) = try await URLSession.shared.data(from: url)
+        
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else{
+            throw TSError.invalidResponse
+        }
+        do {
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            return try decoder.decode([Quote].self, from:data)
+        } catch {
+            throw TSError.invalidData
+        }
+        
+    }
+    
+    enum TSError: Error {
+        
+        case invalidURL
+        case invalidResponse
+        case invalidData
+    }
+}
