@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var quotes: [Quote] = []
+    
     var body: some View {
         NavigationView{
             
@@ -65,6 +68,13 @@ struct ContentView: View {
             .background(.lightBackground)
             
             
+        }
+        .task {
+            do{
+                quotes = try await ApiService().getQuotes()
+            } catch {
+                print(error.localizedDescription)
+            }
         }
         
         
