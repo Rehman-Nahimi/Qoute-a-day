@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var quotes: [Quote] = []
-    
+    @StateObject var viewModel = NewAPI()
     
     var body: some View {
         NavigationView{
@@ -37,13 +37,21 @@ struct ContentView: View {
                 
                 Spacer()
                     .frame(height: 175)
-                
-                Text("This is where the qoute will go")
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 30, weight: .bold))
-                    .foregroundColor(.fontBrown)
-                    .padding()
+                if viewModel.object != nil{
                     
+                    Text(viewModel.object!.qoute)
+                        .multilineTextAlignment(.center)
+                        .font(.system(size: 30, weight: .bold))
+                        .foregroundColor(.fontBrown)
+                        .padding()
+                }
+                else {
+                    Text("This is where the qoute will go")
+                        .multilineTextAlignment(.center)
+                        .font(.system(size: 30, weight: .bold))
+                        .foregroundColor(.fontBrown)
+                        .padding()
+                }
                 Text("Author")
                     .font(.system(size: 18, weight: .bold))
                     .foregroundColor(.fontDarkBrown)
@@ -70,13 +78,15 @@ struct ContentView: View {
             
             
         }
-        .task {
-            do{
-                quotes = try await ApiService().getQuotes()
-                print("Success")
-            } catch {
-                print(error.localizedDescription)
-            }
+        
+//        .task {
+//            do{
+//                viewModel.readObject()
+////                quotes = try await ApiService().getQuotes()
+////                print("Success")
+//            } catch {
+//                print(error.localizedDescription)
+//            }
             
 //            catch ApiService.TSError.invalidURL{
 //                print("Invalid Url")
@@ -87,12 +97,12 @@ struct ContentView: View {
 //                print("Invalid Response")
 //
 //            }
-        }
+//        }
         
         
     }
     func refresh() {
-        
+        viewModel.readObject()
     }
 }
 

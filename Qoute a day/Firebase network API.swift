@@ -4,8 +4,32 @@
 //
 //  Created by Ray Nahimi on 30/11/2023.
 //
-import Foundation
 
+import FirebaseCore
+import FirebaseDatabase
+import FirebaseDatabaseSwift
+import Foundation
+import UIKit
+
+
+class NewAPI:ObservableObject{
+    var ref = Database.database().reference()
+    
+    @Published var value: String? = nil
+    
+    @Published var object: NewQuote? = nil
+    
+    func readObject() {
+        ref.child("0")
+            .observe(.value) {snapshot in
+                do{
+                    self.object = try snapshot.data(as: NewQuote.self)
+                }catch {
+                    print("Can not convert NewQuote")
+                }
+            }
+    }
+}
 
 class ApiCall{
     

@@ -17,4 +17,18 @@ struct Quote: Identifiable, Codable {
     var genre: [String]
 }
 
+struct NewQuote: Encodable, Decodable {
+    var id: String
+    var qoute: String
+    var author: String
+    var genre: [String]
+}
 
+extension Encodable{
+    var toDictionary: [String: Any]?{
+        guard let data = try? JSONEncoder().encode(self) else{
+            return nil
+        }
+        return try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any]
+    }
+}
