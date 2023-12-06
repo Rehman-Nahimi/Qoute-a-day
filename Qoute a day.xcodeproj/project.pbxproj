@@ -16,6 +16,11 @@
 		E084DC6B2B122F1000599461 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E084DC6A2B122F1000599461 /* Preview Assets.xcassets */; };
 		E084DC722B1231F000599461 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084DC712B1231F000599461 /* Colors.swift */; };
 		E084DC742B139A8600599461 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084DC732B139A8600599461 /* Logo.swift */; };
+		E0CBD2FC2B208CCC002B142B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0CBD2FB2B208CCC002B142B /* GoogleService-Info.plist */; };
+		E0CBD2FF2B208E1B002B142B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBD2FE2B208E1B002B142B /* FirebaseAnalytics */; };
+		E0CBD3012B208E1B002B142B /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBD3002B208E1B002B142B /* FirebaseAnalyticsSwift */; };
+		E0CBD3032B208E1B002B142B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBD3022B208E1B002B142B /* FirebaseDatabase */; };
+		E0CBD3052B208E1B002B142B /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBD3042B208E1B002B142B /* FirebaseDatabaseSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,7 @@
 		E084DC6A2B122F1000599461 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E084DC712B1231F000599461 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E084DC732B139A8600599461 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		E0CBD2FB2B208CCC002B142B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0CBD3052B208E1B002B142B /* FirebaseDatabaseSwift in Frameworks */,
+				E0CBD3032B208E1B002B142B /* FirebaseDatabase in Frameworks */,
+				E0CBD3012B208E1B002B142B /* FirebaseAnalyticsSwift in Frameworks */,
+				E0CBD2FF2B208E1B002B142B /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +79,7 @@
 				E084DC732B139A8600599461 /* Logo.swift */,
 				E084DC712B1231F000599461 /* Colors.swift */,
 				E084DC672B122F1000599461 /* Assets.xcassets */,
+				E0CBD2FB2B208CCC002B142B /* GoogleService-Info.plist */,
 				E084DC692B122F1000599461 /* Preview Content */,
 			);
 			path = "Qoute a day";
@@ -98,6 +109,12 @@
 			dependencies = (
 			);
 			name = "Qoute a day";
+			packageProductDependencies = (
+				E0CBD2FE2B208E1B002B142B /* FirebaseAnalytics */,
+				E0CBD3002B208E1B002B142B /* FirebaseAnalyticsSwift */,
+				E0CBD3022B208E1B002B142B /* FirebaseDatabase */,
+				E0CBD3042B208E1B002B142B /* FirebaseDatabaseSwift */,
+			);
 			productName = "Qoute a day";
 			productReference = E084DC602B122F0E00599461 /* Qoute a day.app */;
 			productType = "com.apple.product-type.application";
@@ -126,6 +143,9 @@
 				Base,
 			);
 			mainGroup = E084DC572B122F0E00599461;
+			packageReferences = (
+				E0CBD2FD2B208E1B002B142B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E084DC612B122F0E00599461 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,6 +162,7 @@
 			files = (
 				E084DC6B2B122F1000599461 /* Preview Assets.xcassets in Resources */,
 				E084DC682B122F1000599461 /* Assets.xcassets in Resources */,
+				E0CBD2FC2B208CCC002B142B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.rehman.nahimi.Qoute-a-day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -327,6 +349,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.rehman.nahimi.Qoute-a-day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -357,6 +380,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E0CBD2FD2B208E1B002B142B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E0CBD2FE2B208E1B002B142B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0CBD2FD2B208E1B002B142B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E0CBD3002B208E1B002B142B /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0CBD2FD2B208E1B002B142B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		E0CBD3022B208E1B002B142B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0CBD2FD2B208E1B002B142B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		E0CBD3042B208E1B002B142B /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0CBD2FD2B208E1B002B142B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E084DC582B122F0E00599461 /* Project object */;
 }
