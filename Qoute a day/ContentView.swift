@@ -52,9 +52,16 @@ struct ContentView: View {
                         .foregroundColor(.fontBrown)
                         .padding()
                 }
-                Text("Author")
-                    .font(.system(size: 18, weight: .bold))
-                    .foregroundColor(.fontDarkBrown)
+                if viewModel.object != nil{
+                    Text(viewModel.object!.author)
+                        .font(.system(size: 18, weight: .bold))
+                        .foregroundColor(.fontDarkBrown)
+                }
+                else {
+                    Text("Author")
+                        .font(.system(size: 18, weight: .bold))
+                        .foregroundColor(.fontDarkBrown)
+                }
                 
                 Spacer()
                     .frame(height: 100)

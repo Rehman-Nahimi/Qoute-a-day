@@ -19,8 +19,10 @@ class NewAPI:ObservableObject{
     
     @Published var object: NewQuote? = nil
     
+    @Published var random = ["1","2","3","4"]
+    
     func readObject() {
-        ref.child("0")
+        ref.child(random.randomElement()!)
             .observe(.value) {snapshot in
                 do{
                     self.object = try snapshot.data(as: NewQuote.self)
