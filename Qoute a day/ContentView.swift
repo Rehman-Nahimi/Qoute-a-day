@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @State var quotes: [Quote] = []
     
+    
     var body: some View {
         NavigationView{
             
@@ -72,9 +73,20 @@ struct ContentView: View {
         .task {
             do{
                 quotes = try await ApiService().getQuotes()
+                print("Success")
             } catch {
                 print(error.localizedDescription)
             }
+            
+//            catch ApiService.TSError.invalidURL{
+//                print("Invalid Url")
+//            } catch ApiService.TSError.invalidData {
+//                print("Invalid Data")
+//
+//            } catch ApiService.TSError.invalidResponse{
+//                print("Invalid Response")
+//
+//            }
         }
         
         
