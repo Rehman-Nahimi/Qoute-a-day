@@ -10,10 +10,9 @@ import SwiftUI
 
 struct Quote: Identifiable, Codable {
     
-    var id = UUID()
+    var id: String
     var qoute: String
     var author: String
-    
     var genre: [String]
 }
 

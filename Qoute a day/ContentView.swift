@@ -35,27 +35,17 @@ struct ContentView: View {
                 
                 Spacer()
                     .frame(height: 175)
-                if let object = viewModel.object {
                     
-                  Text(object.qoute ?? "")
+                Text(viewModel.object?.qoute ?? "This is where the qoute will go")
                         .multilineTextAlignment(.center)
                         .font(.system(size: 30, weight: .bold))
                         .foregroundColor(.fontBrown)
                         .padding()
-                  Text(object.author)
+                Text(viewModel.object?.author ?? "Author")
                     .font(.system(size: 18, weight: .bold))
                     .foregroundColor(.fontDarkBrown)
-                }
-                else {
-                  Text("This is where the qoute will go")
-                        .multilineTextAlignment(.center)
-                        .font(.system(size: 30, weight: .bold))
-                        .foregroundColor(.fontBrown)
-                        .padding()
-                  Text("Author")
-                    .font(.system(size: 18, weight: .bold))
-                    .foregroundColor(.fontDarkBrown)
-                }
+                
+                
                 
                 Spacer()
                     .frame(height: 100)
