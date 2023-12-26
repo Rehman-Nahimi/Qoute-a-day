@@ -9,12 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var quotes: [Quote] = []
     @StateObject var viewModel = NewAPI()
     
     var body: some View {
         NavigationView{
-            
             VStack {
                 ZStack{
                     RoundedRectangle(cornerRadius: 100)
@@ -37,36 +35,34 @@ struct ContentView: View {
                 
                 Spacer()
                     .frame(height: 175)
-                if viewModel.object != nil{
+                if let object = viewModel.object {
                     
-                    Text(viewModel.object!.qoute)
+                  Text(object.qoute ?? "")
                         .multilineTextAlignment(.center)
                         .font(.system(size: 30, weight: .bold))
                         .foregroundColor(.fontBrown)
                         .padding()
+                  Text(object.author)
+                    .font(.system(size: 18, weight: .bold))
+                    .foregroundColor(.fontDarkBrown)
                 }
                 else {
-                    Text("This is where the qoute will go")
+                  Text("This is where the qoute will go")
                         .multilineTextAlignment(.center)
                         .font(.system(size: 30, weight: .bold))
                         .foregroundColor(.fontBrown)
                         .padding()
-                }
-                if viewModel.object != nil{
-                    Text(viewModel.object!.author)
-                        .font(.system(size: 18, weight: .bold))
-                        .foregroundColor(.fontDarkBrown)
-                }
-                else {
-                    Text("Author")
-                        .font(.system(size: 18, weight: .bold))
-                        .foregroundColor(.fontDarkBrown)
+                  Text("Author")
+                    .font(.system(size: 18, weight: .bold))
+                    .foregroundColor(.fontDarkBrown)
                 }
                 
                 Spacer()
                     .frame(height: 100)
                 Button{
-                    refresh()
+                  Task {
+                    await viewModel.refresh()
+                  }
                 } label: {
                     Image(systemName: "arrow.counterclockwise")
                         .font(.system(size: 30, weight: .bold))
@@ -85,31 +81,11 @@ struct ContentView: View {
             
             
         }
-        
-//        .task {
-//            do{
-//                viewModel.readObject()
-////                quotes = try await ApiService().getQuotes()
-////                print("Success")
-//            } catch {
-//                print(error.localizedDescription)
-//            }
-            
-//            catch ApiService.TSError.invalidURL{
-//                print("Invalid Url")
-//            } catch ApiService.TSError.invalidData {
-//                print("Invalid Data")
-//
-//            } catch ApiService.TSError.invalidResponse{
-//                print("Invalid Response")
-//
-//            }
-//        }
-        
-        
-    }
-    func refresh() {
-        viewModel.readObject()
+        .onAppear {
+          Task {
+            await viewModel.readObject()
+          }
+        }
     }
 }
 
