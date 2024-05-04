@@ -14,6 +14,7 @@ struct Quote: Identifiable, Codable {
     var qoute: String
     var author: String
     var genre: [String]
+    var prompt: String
 }
 
 

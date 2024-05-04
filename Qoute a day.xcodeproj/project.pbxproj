@@ -16,12 +16,55 @@
 		E084DC6B2B122F1000599461 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E084DC6A2B122F1000599461 /* Preview Assets.xcassets */; };
 		E084DC722B1231F000599461 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084DC712B1231F000599461 /* Colors.swift */; };
 		E084DC742B139A8600599461 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084DC732B139A8600599461 /* Logo.swift */; };
+		E085E0BD2BD0486900BE6B7B /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = E085E0BC2BD0486900BE6B7B /* OpenAIKit */; };
+		E085E0C02BD0574600BE6B7B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E085E0BF2BD0574600BE6B7B /* FirebaseAnalytics */; };
+		E085E0C22BD0574D00BE6B7B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E085E0C12BD0574D00BE6B7B /* FirebaseDatabase */; };
+		E085E0C42BD0575400BE6B7B /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E085E0C32BD0575400BE6B7B /* FirebaseDatabaseSwift */; };
+		E085E0C62BD0577100BE6B7B /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E085E0C52BD0577100BE6B7B /* FirebaseAnalyticsSwift */; };
+		E085E0C82BD05D5700BE6B7B /* Firebase network API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07DB88E2B19534200CC7402 /* Firebase network API.swift */; };
+		E085E0CA2BD05D5C00BE6B7B /* Quote .swift in Sources */ = {isa = PBXBuildFile; fileRef = E07DB8902B1A366400CC7402 /* Quote .swift */; };
+		E085E0CE2BD05E2100BE6B7B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084DC712B1231F000599461 /* Colors.swift */; };
+		E085E0D02BD05E7100BE6B7B /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = E085E0CF2BD05E7100BE6B7B /* OpenAIKit */; };
+		E085E0D22BD0615500BE6B7B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0CBD2FB2B208CCC002B142B /* GoogleService-Info.plist */; };
+		E08951482BCF012600F56917 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E08951472BCF012600F56917 /* WidgetKit.framework */; };
+		E089514A2BCF012600F56917 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E08951492BCF012600F56917 /* SwiftUI.framework */; };
+		E089514D2BCF012600F56917 /* QouteWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E089514C2BCF012600F56917 /* QouteWidgetBundle.swift */; };
+		E089514F2BCF012600F56917 /* QouteWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E089514E2BCF012600F56917 /* QouteWidgetLiveActivity.swift */; };
+		E08951512BCF012600F56917 /* QouteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08951502BCF012600F56917 /* QouteWidget.swift */; };
+		E08951542BCF012700F56917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08951532BCF012700F56917 /* Assets.xcassets */; };
+		E08951562BCF012700F56917 /* QouteWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E08951522BCF012600F56917 /* QouteWidget.intentdefinition */; };
+		E08951572BCF012700F56917 /* QouteWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E08951522BCF012600F56917 /* QouteWidget.intentdefinition */; };
+		E089515A2BCF012700F56917 /* QouteWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E08951452BCF012600F56917 /* QouteWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E0CBD2FC2B208CCC002B142B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0CBD2FB2B208CCC002B142B /* GoogleService-Info.plist */; };
 		E0CBD2FF2B208E1B002B142B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBD2FE2B208E1B002B142B /* FirebaseAnalytics */; };
 		E0CBD3012B208E1B002B142B /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBD3002B208E1B002B142B /* FirebaseAnalyticsSwift */; };
 		E0CBD3032B208E1B002B142B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBD3022B208E1B002B142B /* FirebaseDatabase */; };
 		E0CBD3052B208E1B002B142B /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBD3042B208E1B002B142B /* FirebaseDatabaseSwift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E08951582BCF012700F56917 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E084DC582B122F0E00599461 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E08951442BCF012600F56917;
+			remoteInfo = QouteWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E089515B2BCF012700F56917 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E089515A2BCF012700F56917 /* QouteWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E07DB88C2B16718B00CC7402 /* Second logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Second logo.swift"; sourceTree = "<group>"; };
@@ -34,6 +77,16 @@
 		E084DC6A2B122F1000599461 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E084DC712B1231F000599461 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E084DC732B139A8600599461 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		E085E0BE2BD0521300BE6B7B /* Qoute-a-day-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Qoute-a-day-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E08951452BCF012600F56917 /* QouteWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QouteWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E08951472BCF012600F56917 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E08951492BCF012600F56917 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E089514C2BCF012600F56917 /* QouteWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QouteWidgetBundle.swift; sourceTree = "<group>"; };
+		E089514E2BCF012600F56917 /* QouteWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QouteWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		E08951502BCF012600F56917 /* QouteWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QouteWidget.swift; sourceTree = "<group>"; };
+		E08951522BCF012600F56917 /* QouteWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = QouteWidget.intentdefinition; sourceTree = "<group>"; };
+		E08951532BCF012700F56917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E08951552BCF012700F56917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0CBD2FB2B208CCC002B142B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,8 +97,23 @@
 			files = (
 				E0CBD3052B208E1B002B142B /* FirebaseDatabaseSwift in Frameworks */,
 				E0CBD3032B208E1B002B142B /* FirebaseDatabase in Frameworks */,
+				E085E0BD2BD0486900BE6B7B /* OpenAIKit in Frameworks */,
 				E0CBD3012B208E1B002B142B /* FirebaseAnalyticsSwift in Frameworks */,
 				E0CBD2FF2B208E1B002B142B /* FirebaseAnalytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08951422BCF012600F56917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E085E0C62BD0577100BE6B7B /* FirebaseAnalyticsSwift in Frameworks */,
+				E085E0C42BD0575400BE6B7B /* FirebaseDatabaseSwift in Frameworks */,
+				E089514A2BCF012600F56917 /* SwiftUI.framework in Frameworks */,
+				E08951482BCF012600F56917 /* WidgetKit.framework in Frameworks */,
+				E085E0C22BD0574D00BE6B7B /* FirebaseDatabase in Frameworks */,
+				E085E0D02BD05E7100BE6B7B /* OpenAIKit in Frameworks */,
+				E085E0C02BD0574600BE6B7B /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				E084DC622B122F0E00599461 /* Qoute a day */,
+				E089514B2BCF012600F56917 /* QouteWidget */,
+				E08951462BCF012600F56917 /* Frameworks */,
 				E084DC612B122F0E00599461 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				E084DC602B122F0E00599461 /* Qoute a day.app */,
+				E08951452BCF012600F56917 /* QouteWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +142,7 @@
 		E084DC622B122F0E00599461 /* Qoute a day */ = {
 			isa = PBXGroup;
 			children = (
+				E085E0BE2BD0521300BE6B7B /* Qoute-a-day-Info.plist */,
 				E084DC632B122F0E00599461 /* Qoute_a_dayApp.swift */,
 				E084DC652B122F0E00599461 /* ContentView.swift */,
 				E07DB88E2B19534200CC7402 /* Firebase network API.swift */,
@@ -93,6 +165,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E08951462BCF012600F56917 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E08951472BCF012600F56917 /* WidgetKit.framework */,
+				E08951492BCF012600F56917 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E089514B2BCF012600F56917 /* QouteWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E089514C2BCF012600F56917 /* QouteWidgetBundle.swift */,
+				E089514E2BCF012600F56917 /* QouteWidgetLiveActivity.swift */,
+				E08951502BCF012600F56917 /* QouteWidget.swift */,
+				E08951522BCF012600F56917 /* QouteWidget.intentdefinition */,
+				E08951532BCF012700F56917 /* Assets.xcassets */,
+				E08951552BCF012700F56917 /* Info.plist */,
+			);
+			path = QouteWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,10 +197,12 @@
 				E084DC5C2B122F0E00599461 /* Sources */,
 				E084DC5D2B122F0E00599461 /* Frameworks */,
 				E084DC5E2B122F0E00599461 /* Resources */,
+				E089515B2BCF012700F56917 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E08951592BCF012700F56917 /* PBXTargetDependency */,
 			);
 			name = "Qoute a day";
 			packageProductDependencies = (
@@ -114,10 +210,35 @@
 				E0CBD3002B208E1B002B142B /* FirebaseAnalyticsSwift */,
 				E0CBD3022B208E1B002B142B /* FirebaseDatabase */,
 				E0CBD3042B208E1B002B142B /* FirebaseDatabaseSwift */,
+				E085E0BC2BD0486900BE6B7B /* OpenAIKit */,
 			);
 			productName = "Qoute a day";
 			productReference = E084DC602B122F0E00599461 /* Qoute a day.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E08951442BCF012600F56917 /* QouteWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E089515E2BCF012700F56917 /* Build configuration list for PBXNativeTarget "QouteWidgetExtension" */;
+			buildPhases = (
+				E08951412BCF012600F56917 /* Sources */,
+				E08951422BCF012600F56917 /* Frameworks */,
+				E08951432BCF012600F56917 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QouteWidgetExtension;
+			packageProductDependencies = (
+				E085E0BF2BD0574600BE6B7B /* FirebaseAnalytics */,
+				E085E0C12BD0574D00BE6B7B /* FirebaseDatabase */,
+				E085E0C32BD0575400BE6B7B /* FirebaseDatabaseSwift */,
+				E085E0C52BD0577100BE6B7B /* FirebaseAnalyticsSwift */,
+				E085E0CF2BD05E7100BE6B7B /* OpenAIKit */,
+			);
+			productName = QouteWidgetExtension;
+			productReference = E08951452BCF012600F56917 /* QouteWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -130,6 +251,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					E084DC5F2B122F0E00599461 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					E08951442BCF012600F56917 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
@@ -145,12 +269,14 @@
 			mainGroup = E084DC572B122F0E00599461;
 			packageReferences = (
 				E0CBD2FD2B208E1B002B142B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E085E0BB2BD0486900BE6B7B /* XCRemoteSwiftPackageReference "OpenAIKit" */,
 			);
 			productRefGroup = E084DC612B122F0E00599461 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E084DC5F2B122F0E00599461 /* Qoute a day */,
+				E08951442BCF012600F56917 /* QouteWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -163,6 +289,15 @@
 				E084DC6B2B122F1000599461 /* Preview Assets.xcassets in Resources */,
 				E084DC682B122F1000599461 /* Assets.xcassets in Resources */,
 				E0CBD2FC2B208CCC002B142B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08951432BCF012600F56917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E08951542BCF012700F56917 /* Assets.xcassets in Resources */,
+				E085E0D22BD0615500BE6B7B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,10 +315,33 @@
 				E084DC722B1231F000599461 /* Colors.swift in Sources */,
 				E084DC742B139A8600599461 /* Logo.swift in Sources */,
 				E084DC642B122F0E00599461 /* Qoute_a_dayApp.swift in Sources */,
+				E08951572BCF012700F56917 /* QouteWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08951412BCF012600F56917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E089514D2BCF012600F56917 /* QouteWidgetBundle.swift in Sources */,
+				E085E0CE2BD05E2100BE6B7B /* Colors.swift in Sources */,
+				E085E0C82BD05D5700BE6B7B /* Firebase network API.swift in Sources */,
+				E08951512BCF012600F56917 /* QouteWidget.swift in Sources */,
+				E085E0CA2BD05D5C00BE6B7B /* Quote .swift in Sources */,
+				E089514F2BCF012600F56917 /* QouteWidgetLiveActivity.swift in Sources */,
+				E08951562BCF012700F56917 /* QouteWidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E08951592BCF012700F56917 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E08951442BCF012600F56917 /* QouteWidgetExtension */;
+			targetProxy = E08951582BCF012700F56917 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E084DC6C2B122F1000599461 /* Debug */ = {
@@ -303,6 +461,7 @@
 		E084DC6F2B122F1000599461 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,6 +469,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Qoute a day/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Qoute-a-day-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,6 +492,7 @@
 		E084DC702B122F1000599461 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +500,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Qoute a day/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Qoute-a-day-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -352,6 +514,58 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.rehman.nahimi.Qoute-a-day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E089515C2BCF012700F56917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QouteWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QouteWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.rehman.nahimi.Qoute-a-day.QouteWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E089515D2BCF012700F56917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QouteWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QouteWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.rehman.nahimi.Qoute-a-day.QouteWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,9 +593,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		E089515E2BCF012700F56917 /* Build configuration list for PBXNativeTarget "QouteWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E089515C2BCF012700F56917 /* Debug */,
+				E089515D2BCF012700F56917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E085E0BB2BD0486900BE6B7B /* XCRemoteSwiftPackageReference "OpenAIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OpenDive/OpenAIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		E0CBD2FD2B208E1B002B142B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -393,6 +624,36 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E085E0BC2BD0486900BE6B7B /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E085E0BB2BD0486900BE6B7B /* XCRemoteSwiftPackageReference "OpenAIKit" */;
+			productName = OpenAIKit;
+		};
+		E085E0BF2BD0574600BE6B7B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0CBD2FD2B208E1B002B142B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E085E0C12BD0574D00BE6B7B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0CBD2FD2B208E1B002B142B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		E085E0C32BD0575400BE6B7B /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0CBD2FD2B208E1B002B142B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		E085E0C52BD0577100BE6B7B /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0CBD2FD2B208E1B002B142B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		E085E0CF2BD05E7100BE6B7B /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E085E0BB2BD0486900BE6B7B /* XCRemoteSwiftPackageReference "OpenAIKit" */;
+			productName = OpenAIKit;
+		};
 		E0CBD2FE2B208E1B002B142B /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E0CBD2FD2B208E1B002B142B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
